@@ -10,8 +10,11 @@ function setup() {
 
     function velgOrd(a,b){
         let arrKat = [a,b];
-        let kategori = arrKat[Math.floor(Math.random() * 2)];
-        let ord = kategori[Math.floor(Math.random() * kategori.length)];
+        let katPlass = Math.floor(Math.random() * 2);
+        let kategori = arrKat[katPlass];
+        let ordPlass = Math.floor(Math.random() * kategori.length);
+        let ord = kategori[ordPlass];
+        return {ord,katPlass};
     }
 
     let boks = new Boks(120, 30, ctx);
@@ -33,7 +36,7 @@ function setup() {
     function animer(event) {
         ctx.clearRect(0, 0, 500, 500);
         boks.fall();
-        boks.tegn(ctx);
+        boks.tegn(ctx, ord.ord);
     }
     
     function visPoeng() {
