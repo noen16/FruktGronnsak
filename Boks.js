@@ -20,11 +20,10 @@ class Boks {
         this.vy = 2;
     }
 
-<<<<<<< HEAD
+
+
     flytt(Knapp){
-=======
-    flytt(Knapp) {
->>>>>>> origin/master
+
         switch (Knapp) {
             case 37:
                 this.x -= 10;
@@ -36,13 +35,5 @@ class Boks {
 
 
         }
-<<<<<<< HEAD
-
-        
-
-
-}
-=======
     }
->>>>>>> origin/master
 }

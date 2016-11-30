@@ -11,7 +11,7 @@ class Kurv {
     tegn(ctx) {
         let style = ctx.fillStyle;
         ctx.beginPath();
-                ctx.fillStyle = this.color;
+        ctx.fillStyle = this.color;
         ctx.fillRect(this.x, this.y, this.w, this.h);
 
     }
