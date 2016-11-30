@@ -5,6 +5,7 @@ class Boks {
         this.w = 50;
         this.h = 30;
         this.vy = 0;
+        this.vx = 0;
         this.ord = ord;
     }
 
@@ -18,7 +19,19 @@ class Boks {
         this.vy = 2;
     }
 
-    flytt(knapp){
+    flytt(Knapp){
+        switch (Knapp) {
+        case 37:
+            this.x -= 10;
+        break;
+
+        case 39:
+            this.x += 10;
+        break;
+
+
+        }
+
         
     }
 

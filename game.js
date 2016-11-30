@@ -7,6 +7,7 @@ function setup() {
     let arrVegetable = ["gulrot", "brokkoli", "kål"];
     let arrFruit = ["eple", "pære", "kiwi", "appelsin"];
     let ord = velgOrd(arrVegetable,arrFruit);
+    let keyCode;
 
     function velgOrd(a,b){
         let arrKat = [a,b];
@@ -28,6 +29,31 @@ function setup() {
 
 
     setInterval(animer, 20);
+        
+   
+
+  document.addEventListener("keydown",tastNed);
+  document.addEventListener("keyup",tastOpp);
+
+ 
+
+    function tastNed(event) {
+        console.log(event.keyCode);
+        switch (event.keyCode) {
+            case 37:
+            boks.flytt(37);
+            break;
+
+            case 39:
+            boks.flytt(39);
+            break;
+        }
+        
+  }
+
+    function tastOpp(event) {
+
+  }
 
 
     function animer(event) {
