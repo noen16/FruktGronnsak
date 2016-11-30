@@ -1,5 +1,30 @@
-#spill{
+#spill {
+    /*visibility: hidden;*/
+    position: absolute;
+    border: solid lightcoral 4px;
     width: 350px;
     height: 500px;
-    border: solid green 1px;
+    top: 10px;
+    left: 10px;
+}
+
+#skjema {
+   
+    border: solid lightseagreen 4px;
+    width: 350px;
+    height: 500px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#main {
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+#startspill {
+
+    color: lightseagreen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

@@ -22,23 +22,27 @@ class Boks {
 
 <<<<<<< HEAD
     flytt(Knapp){
+=======
+    flytt(Knapp) {
+>>>>>>> origin/master
         switch (Knapp) {
-        case 37:
-            this.x -= 10;
-        break;
+            case 37:
+                this.x -= 10;
+                break;
 
-        case 39:
-            this.x += 10;
-        break;
+            case 39:
+                this.x += 10;
+                break;
 
 
         }
+<<<<<<< HEAD
 
         
+
+
+}
 =======
-    flytt(knapp) {
-
->>>>>>> origin/master
     }
-
+>>>>>>> origin/master
 }
