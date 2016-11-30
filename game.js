@@ -3,12 +3,13 @@ function setup() {
     canvas.width = 350;
     canvas.height = 500;
     let ctx = canvas.getContext("2d");
-    let poeng;
 
     let arrVegetable = ["gulrot", "brokkoli", "kål"];
     let arrFruit = ["eple", "pære", "kiwi", "appelsin"];
     let ord = velgOrd(arrVegetable, arrFruit);
     let keyCode;
+    let poeng;
+    let katPlass;
 
     function velgOrd(a, b) {
         let arrKat = [a, b];
@@ -67,10 +68,10 @@ function setup() {
         b2.tegn(ctx);
     }
 
-    function tellPoeng(a, target) {
-        if (target === 0 && a.x < 175) {
+    function tellPoeng(a) {
+        if (katPlass === 0 && a.x < 175) {
             poeng += 1;
-        } else if (target === 1 && a.x > 175) {
+        } else if (katPlass === 1 && a.x > 175) {
             poeng += 1;
         } else {
             poeng += 0;
