@@ -1,0 +1,29 @@
+#board {
+    position: relative;
+    background-image: url("diplom_enkel.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid blue 1px;
+    width: 300px;
+    height: 400px;
+}
+
+#board.girl {
+    
+    background-image: url("diplom_girl.jpg");
+    
+}
+
+
+
+#board.boy {
+    background-image: url("diplom_boy.jpg");
+}
+
+#navn {
+    position: absolute;
+    left: 50px;
+    top: 230px;
+    color: red;
+}
+
