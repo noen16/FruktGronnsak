@@ -66,15 +66,19 @@ function setup() {
         boks.tegn(ctx, ord.ord);
         b1.tegn(ctx);
         b2.tegn(ctx);
+        tellPoeng(boks);
     }
 
     function tellPoeng(a) {
+        if(a.y>400){
         if (katPlass === 0 && a.x < 175) {
             poeng += 1;
         } else if (katPlass === 1 && a.x > 175) {
             poeng += 1;
         } else {
             poeng += 0;
+        }
+        console.log(poeng);
         }
     }
 
