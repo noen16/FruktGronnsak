@@ -9,9 +9,10 @@ class Boks {
         this.ord = ord;
     }
 
-    tegn(ctx) {
+    tegn(ctx, ord) {
         ctx.beginPath();
-        ctx.fillRect(this.x, this.y, this.w, this.h);
+        ctx.font = "32px serif";
+        ctx.fillText(ord, this.x, this.y);
     }
 
     fall() {
@@ -19,6 +20,7 @@ class Boks {
         this.vy = 2;
     }
 
+<<<<<<< HEAD
     flytt(Knapp){
         switch (Knapp) {
         case 37:
@@ -33,6 +35,10 @@ class Boks {
         }
 
         
+=======
+    flytt(knapp) {
+
+>>>>>>> origin/master
     }
 
 }
