@@ -1,7 +1,11 @@
 #spill {
-    visibility: hidden;
+    /*visibility: hidden;*/
     position: absolute;
     border: solid lightcoral 4px;
+    width: 350px;
+    height: 500px;
+    top: 10px;
+    left: 10px;
 }
 
 #skjema {
