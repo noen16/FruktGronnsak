@@ -1,5 +1,6 @@
 class Boks {
     constructor(x, y, ord) {
+        this.color = "black";
         this.x = x;
         this.y = y;
         this.w = 50;
@@ -11,6 +12,7 @@ class Boks {
 
     tegn(ctx, ord) {
         ctx.beginPath();
+        ctx.fillStyle = this.color;
         ctx.font = "32px serif";
         ctx.fillText(ord, this.x, this.y);
     }
@@ -18,7 +20,10 @@ class Boks {
     fall() {
         this.y += this.vy;
         this.vy = 2;
+            if (this.y > 375 )
+            this.y = 30;
     }
+    
 
 
 
@@ -35,5 +40,9 @@ class Boks {
 
 
         }
+    }
+    plasser(x,y){
+        this.x = x;
+        this.y = y;
     }
 }
